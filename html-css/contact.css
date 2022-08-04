@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+body{
+    margin: 0 auto;
+    background-color: #161616;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.flex-one{
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(#f86880, #fd4766) 1 100;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    padding: 1.5vh 1.5vw;
+}
+
+.logo{
+    font-family: "Oswald", Arial;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: -2vw;
+}
+
+.lfirst{
+    color:white;
+}
+
+.lsecond{
+    color: #ec566f;
+}
+
+.upperbuttonsdiv{
+    position: relative;
+}
+
+.mobileupperbuttondiv{
+    position: relative;
+    display: none;
+}
+
+.upperbuttons, .ddbutton, .mddbutton{
+    border: none;
+    background-image: linear-gradient(to top right, #f86880, #fd4766);
+    height: 4em;
+    width: 8em;
+    margin: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upperbuttons a{
+    font-family: "Oswald", Arial;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.upperbuttons:hover{
+    transform: scale(1.05);
+}
+
+.ddbutton{
+    display: block;
+    position: relative;
+    left: 103%;
+}
+
+.ddbutton > a{
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", Arial;
+    font-size: 1rem;
+}
+
+.mddbutton > a{
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", Arial;
+    font-size: 1rem;
+}
+
+.ddbutton:hover{
+    transform: scale(1.05);
+}
+
+.ddlist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.mddlist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.ddlistopening{
+    transform: scaleY(1);
+}
+
+.mddlistopening{
+    transform: scaleY(1);
+}
+
+h1{
+    margin-top: 15vh;
+    font-family: "Oswald", Arial;
+    color: #ec566f;
+}
+
+.contact{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    color: white;
+    font-family: "Oswald", Arial;
+    font-size: 1.5rem;
+}
+
+.map{
+    margin-bottom: 10vh;
+}
+
+.contactform{
+    font-family: "Oswald";
+    font-size: 1.3rem;
+
+}
+
+form > *{
+    margin-bottom: 2vh;
+}
+
+form > p{
+    font-size: 1.8rem;
+    color: #ec566f;
+}
+
+form > input{
+    font-family: "Oswald", Arial;
+    border-radius: 3px;
+}
+
+form > input:nth-of-type(1){
+    width: 100px;
+}
+
+form > input:nth-of-type(2){
+    width: 182px;
+}
+
+label{
+    position: relative;
+    width: 20px;
+    color: #ec566f;
+}
+
+textarea{
+    margin-top: 2vh;
+    width: 50vw;
+    height: 35vh;
+    border-radius: 3px;
+    font-family: "Oswald", Arial;
+}
+
+form > input:nth-of-type(3){
+    background-image: linear-gradient(to top right, #f86880, #fd4766);
+    color: white;
+    font-family: "Oswald", Arial;
+    font-size: 1.5rem;
+    padding: 2vh 3vw;
+    border-radius: 50px;
+
+}
+
+form > input:nth-of-type(3):hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    .mobileupperbuttondiv{
+        display: block;
+    }
+
+    .upperbuttonsdiv{
+        display: none;
+    }
+
+    .contact{
+        font-size: 1.3rem;
+    }
+
+    textarea{
+        width: 70vw;
+    }
+
+    form > input:nth-of-type(3){
+        padding: 2vh 7vw;
+    }
+}
+
+
+

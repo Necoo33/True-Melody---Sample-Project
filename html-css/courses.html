@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <title>Our Courses</title>
+</head>
+<body>
+    <header class="flex-one">
+        <div class="logo">
+            <span class="lfirst">True</span><span class="lsecond">Melody</span>
+        </div>
+        <div class="mobileupperbuttondiv">
+            <button class="upperbuttons mddmenu"><p class="mddmenu" style="color: white; font-family: 'Oswald', Arial">Menu</p></button>
+            <div class="mddlist">
+                <button class="mddbutton"><a href="index.html">Home</a></button>
+                <button class="mddbutton"><a href="courses.html">Courses</a></button>
+                <button class="mddbutton"><a href="contact.html">Contact</a></button>
+            </div>
+        </div>
+        <div class="upperbuttonsdiv">
+            <button class="upperbuttons"><a href="index.html">Home</a></button>
+            <button onmouseover="ddlist.classList.toggle('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="upperbuttons ddmenu"><a href="courses.html">Courses</a></button>
+            <div class="ddlist">
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbutton"><a href="stringedinstruments.html">Stringed Instruments</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbutton"><a href="percussioninstruments.html">Percussion Instruments</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbutton"><a href="windinstruments.html">Wind Instrument</a></button>
+                <button onmouseover="ddlist.classList.add('ddlistopening')" onmouseout="ddlist.classList.remove('ddlistopening')" class="ddbutton"><a href="claviers.html">Claviers</a></button>
+            </div>
+            <button class="upperbuttons"><a href="contact.html">Contact</a></button>
+        </div>
+</header>
+
+<div class="coursetypes">
+    <img src="img/pexels-media-5622825-1659562507716.jpeg" alt="Stringed Instruments">
+
+    <h1><a href="stringedinstruments.html">Stringed Instruments</a></h1>
+</div>
+
+<div class="coursetypes">
+        <img src="img/pexels-media-7285177-1659562497332.jpeg" alt="Percussion Instruments">
+
+        <h1><a href="percussioninstruments.html">Percussion Instruments</a></h1>
+</div>
+
+<div class="coursetypes">
+    <img src="img/pexels-media-3857365-1659562517512.jpeg" alt="Wind Instruments">
+
+    <h1><a href="windinstruments.html">Wind Instruments</a></h1>
+</div>
+
+<div class="coursetypes">
+        <img src="img/pexels-media-322719-1659562531854.jpeg" alt="Claviers">
+
+        <h1><a href="claviers.html">Claviers</a></h1>
+</div>
+
+<script>
+    let ddmenu = document.querySelector(".ddmenu");
+    let ddlist = document.querySelector(".ddlist");
+    let mddmenu = document.querySelector(".mddmenu");
+    let mddlist = document.querySelector(".mddlist");
+    let body = document.querySelector("body");
+
+    ddmenu.addEventListener("click", () => {
+        ddlist.classList.toggle("ddlistopening");
+    });
+
+    body.addEventListener("click", () => {
+        ddlist.classList.remove("ddlistopening");
+    });
+
+    mddmenu.addEventListener("click", () => {
+        mddlist.classList.toggle("mddlistopening");
+    });
+</script>
+</body>
+</html>
